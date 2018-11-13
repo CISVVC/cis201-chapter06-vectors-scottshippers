@@ -8,8 +8,7 @@ Date Created: Nov 2018
 
 #ifndef TRANSACTIONLOG_H
 #define TRANSACTIONLOG_H
-#include<string>
-#include<iostream>
+#include <vector>
 #include "transaction.h"
 
    class Transactionlog
@@ -18,11 +17,13 @@ Date Created: Nov 2018
       double m_balance; // declare member function
       double m_min_balance; // declare member function
       double m_average_balance; // declare member function
+
    public:
+      Transactionlog();
       void add_transaction(const Transaction &t);
       int min_daily_balance();
-      int average_daily_balance();
-      void.print();
+      double average_daily_balance();
+      void print();
    };
 
-
+#endif
