@@ -20,7 +20,7 @@ Date Created: Nov 2018
 
    public:
       Transactionlog();
-      void add_transaction(const Transaction &t);
+      void add_transaction(Transaction t);
       int min_daily_balance();
       double average_daily_balance();
       void print();

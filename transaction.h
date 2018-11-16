@@ -23,8 +23,9 @@ Date Created: Nov 2018
       Transaction();
       Transaction(int day, double amount, std::string description);
       std::string to_string();
-      double get_amount();
       int get_day();
+      double get_amount();
+     
    };
 
 #endif

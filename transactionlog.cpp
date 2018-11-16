@@ -16,15 +16,15 @@ Date Created: Nov 2018
       m_average_balance = 0;
    }   
 
-   void Transactionlog::add_transaction(const Transaction &t)
+   void Transactionlog::add_transaction(Transaction t)
    {
-      min_transactions.push_back(t);
+      m_transactions.push_back(t);
       m_balance += t.get_amount();
       min_daily_balance();
    }
    int Transactionlog::min_daily_balance()
    {
-      if (m_balance < m_min_balance ||m_min_balance == false)
+      if (m_balance < m_min_balance || m_min_balance == false)
          m_min_balance = m_balance;
    }
 
